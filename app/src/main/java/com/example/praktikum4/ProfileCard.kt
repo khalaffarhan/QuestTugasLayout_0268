@@ -36,4 +36,19 @@ fun ProfileCard(
     addressColor: Color,
     nameFontFamily: FontFamily? = null,
     nameFontWeight: FontWeight = FontWeight.Bold
-)
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(dimensionResource(id = R.dimen.card_corner)))
+            .background(backgroundColor)
+            .padding(dimensionResource(id = R.dimen.card_padding)),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        // Logo kiri
+        Image(
+            painter = painterResource(id = R.drawable.logo_umy),
+            contentDescription = stringResource(id = R.string.logo_description),
+            modifier = Modifier.size(dimensionResource(id = R.dimen.logo_size))
+        )
+
