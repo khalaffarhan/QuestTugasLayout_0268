@@ -23,3 +23,17 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
+/**
+ * Komponen Card yang dipakai ulang oleh semua card.
+ * phone bersifat nullable: jika null, baris nomor telepon tidak ditampilkan.
+ */
+@Composable
+fun ProfileCard(
+    backgroundColor: Color,
+    name: String,
+    phone: String?,
+    address: String,
+    addressColor: Color,
+    nameFontFamily: FontFamily? = null,
+    nameFontWeight: FontWeight = FontWeight.Bold
+)
