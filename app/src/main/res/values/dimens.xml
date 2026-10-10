@@ -7,3 +7,5 @@
     <dimen name="spacing_large">16dp</dimen>
     <dimen name="spacing_xlarge">24dp</dimen>
 
+    <dimen name="card_corner">12dp</dimen>
+    <dimen name="card_padding">12dp</dimen>
