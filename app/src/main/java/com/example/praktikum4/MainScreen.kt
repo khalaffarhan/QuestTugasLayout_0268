@@ -86,3 +86,14 @@ fun MainScreen(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_medium)))
 
+            // Card 4
+            ProfileCard(
+                backgroundColor = colorResource(id = R.color.card_green),
+                name = stringResource(id = R.string.name_yogi),
+                phone = stringResource(id = R.string.phone_yogi),
+                address = stringResource(id = R.string.address_yogi),
+                addressColor = colorResource(id = R.color.text_white)
+            )
+
+            Spacer(modifier = Modifier.weight(1f))
+
