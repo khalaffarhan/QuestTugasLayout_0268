@@ -52,3 +52,31 @@ fun ProfileCard(
             modifier = Modifier.size(dimensionResource(id = R.dimen.logo_size))
         )
 
+        // Teks tengah
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .padding(horizontal = dimensionResource(id = R.dimen.spacing_large)),
+            verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.spacing_small))
+        ) {
+            Text(
+                text = name,
+                fontSize = dimensionResource(id = R.dimen.text_name).value.sp,
+                fontWeight = nameFontWeight,
+                fontFamily = nameFontFamily,
+                color = colorResource(id = R.color.text_white)
+            )
+            if (phone != null) {
+                Text(
+                    text = phone,
+                    fontSize = dimensionResource(id = R.dimen.text_detail).value.sp,
+                    color = colorResource(id = R.color.text_cyan)
+                )
+            }
+            Text(
+                text = address,
+                fontSize = dimensionResource(id = R.dimen.text_detail).value.sp,
+                color = addressColor
+            )
+        }
+
