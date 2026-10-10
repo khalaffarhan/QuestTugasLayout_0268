@@ -17,3 +17,9 @@
     <string name="name_alfito">Alfito Dinofa</string>
     <string name="phone_alfito">085751015490</string>
     <string name="address_alfito">Pedalaman, Kalimantan</string>
+
+    <string name="name_yogi">Yogi Aulia Ardiano</string>
+    <string name="phone_yogi">085751080951</string>
+    <string name="address_yogi">Pelosok, Kalimantan</string>
+
+</resources>
