@@ -80,3 +80,11 @@ fun ProfileCard(
             )
         }
 
+        // Logo kanan
+        Image(
+            painter = painterResource(id = R.drawable.logo_umy),
+            contentDescription = stringResource(id = R.string.logo_description),
+            modifier = Modifier.size(dimensionResource(id = R.dimen.logo_size))
+        )
+    }
+}
