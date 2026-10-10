@@ -35,3 +35,19 @@ fun MainScreen(modifier: Modifier = Modifier) {
         ) {
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.header_top_padding)))
 
+            // Header
+            Text(
+                text = stringResource(id = R.string.title),
+                fontSize = dimensionResource(id = R.dimen.text_title).value.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorResource(id = R.color.text_primary)
+            )
+            Text(
+                text = stringResource(id = R.string.subtitle),
+                fontSize = dimensionResource(id = R.dimen.text_subtitle).value.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorResource(id = R.color.text_primary)
+            )
+
+            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_xlarge)))
+
