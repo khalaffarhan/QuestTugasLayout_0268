@@ -51,3 +51,16 @@ fun MainScreen(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_xlarge)))
 
+            // Card 1 (tanpa nomor telepon, font cursive)
+            ProfileCard(
+                backgroundColor = colorResource(id = R.color.card_gray),
+                name = stringResource(id = R.string.name_farhan),
+                phone = stringResource(id = R.string.phone_farhan),
+                address = stringResource(id = R.string.address_farhan),
+                addressColor = colorResource(id = R.color.text_yellow),
+                nameFontFamily = FontFamily(Font(R.font.dancing_script)),
+                nameFontWeight = FontWeight.Normal
+            )
+
+            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_medium)))
+
