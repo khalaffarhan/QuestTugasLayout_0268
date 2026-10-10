@@ -2,3 +2,5 @@
 <resources>
     <dimen name="screen_padding">16dp</dimen>
     <dimen name="header_top_padding">48dp</dimen>
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
