@@ -97,3 +97,14 @@ fun MainScreen(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.weight(1f))
 
+            // Footer
+            Text(
+                text = stringResource(id = R.string.copyright),
+                fontSize = dimensionResource(id = R.dimen.text_footer).value.sp,
+                color = colorResource(id = R.color.text_primary),
+                textAlign = TextAlign.Center,
+                modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.spacing_large))
+            )
+        }
+    }
+}
